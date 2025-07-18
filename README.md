@@ -10,6 +10,7 @@ Images should be in the dataset folder.
 ---
 
 ##  Model Architecture
+```text
 
 Input (1, 64, 64)  ⟶ Conv2d(1→32) ⟶ ReLU ⟶ MaxPool
                   ⟶ Conv2d(32→64) ⟶ ReLU ⟶ MaxPool
@@ -17,7 +18,7 @@ Input (1, 64, 64)  ⟶ Conv2d(1→32) ⟶ ReLU ⟶ MaxPool
                   ⟶ Linear(16384→128) ⟶ ReLU
                   ⟶ Linear(128→2) → (x, y)
 
-
+```
 ---
 
 ### Tech Stack
