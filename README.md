@@ -11,7 +11,6 @@ Images should be in the dataset folder.
 
 ##  Model Architecture
 
-```text
 Input (1, 64, 64)  ⟶ Conv2d(1→32) ⟶ ReLU ⟶ MaxPool
                   ⟶ Conv2d(32→64) ⟶ ReLU ⟶ MaxPool
                   ⟶ Flatten
