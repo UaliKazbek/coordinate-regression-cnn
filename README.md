@@ -18,21 +18,26 @@ Input (1, 64, 64)  ⟶ Conv2d(1→32) ⟶ ReLU ⟶ MaxPool
                   ⟶ Linear(16384→128) ⟶ ReLU
                   ⟶ Linear(128→2) → (x, y)
 
-##  Tech stack
+
+---
+
+### Tech Stack
+
 - Python 3
 - PyTorch
 - torchvision.transforms v2
 - NumPy
 - matplotlib
 - tqdm
--  PIL
+- PIL
 
-##  Training Features
+---
 
--  Loss: Mean Squared Error (MSE)  
--  Metric: Mean Absolute Error (MAE) 
--  `Adam` optimizer  
--  `ReduceLROnPlateau` scheduler  
--  Early stopping: If no improvement for 10 epochs
--  Saving best model `.pt`  
--  Checkpointing: Best model is saved as model_state_dict_XX.pt
+### Training Features
+
+- **Loss**: Mean Squared Error (MSE)  
+- **Metric**: Mean Absolute Error (MAE)  
+- **Optimizer**: Adam  
+- **Scheduler**: ReduceLROnPlateau  
+- **Early Stopping**: After 10 epochs w/o improvement  
+- **Checkpointing**: Saves best model as `.pt`
